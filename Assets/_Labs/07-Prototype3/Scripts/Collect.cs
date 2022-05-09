@@ -19,24 +19,24 @@ public class Collect : MonoBehaviour
         
 
     }
-    void OnTriggerEnter(Collider player)
+    void OnTriggerEnter(Collider other)
     {
-        Destroy(gameObject);
+        //Destroy(gameObject);
 
 
-        if (gameObject.name == "Wisp")
+        if (other.gameObject.name == "Wisp")
         {
             Prompt2.SetActive(true);
             Prompt1.SetActive(false);
         }
 
-        if (gameObject.name == "Wisp2")
+        if (other.gameObject.name == "Wisp2")
         {
             Prompt2.SetActive(false);
             Prompt3.SetActive(true);
         }
 
-        if (gameObject.name == "Wisp3")
+        if (other.gameObject.name == "Wisp3")
         {
             Prompt3.SetActive(false);
             Prompt4.SetActive(true);
