@@ -56,7 +56,7 @@ public class Collect : MonoBehaviour
     public GameObject Prompt50;
     public GameObject Prompt51;
 
-
+    //public AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
@@ -104,12 +104,12 @@ public class Collect : MonoBehaviour
         Prompt51.SetActive(false);
 
 
-
+    
     }
     void OnTriggerEnter(Collider other)
     {
         //Destroy(gameObject);
-
+        //audioSource.Play();
 
         if (other.gameObject.name == "Wisp")
         {
