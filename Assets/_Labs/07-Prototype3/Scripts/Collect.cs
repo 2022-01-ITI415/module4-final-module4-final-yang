@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Collect : MonoBehaviour
 {
-
-
     public GameObject Prompt1;
     public GameObject Prompt2;
     public GameObject Prompt3;
